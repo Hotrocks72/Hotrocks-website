@@ -43,8 +43,22 @@
         section { padding: 40px 20px; max-width: 1000px; margin: auto; }
         h2 { color: #e00; border-bottom: 2px solid #e00; padding-bottom: 10px; }
         .band-members li, .shows li { margin: 10px 0; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-        .gallery img { width: 100%; border: 3px solid #e00; cursor: pointer; }
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    border: 3px solid #e00;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255,0,0,0.6);
+}
+
         footer { text-align: center; padding: 20px; background: #000; color: #ccc; }
         a { color: #e00; text-decoration: none; }
         a:hover { text-decoration: underline; }
