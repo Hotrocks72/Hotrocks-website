@@ -3,242 +3,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- JSON-LD Event (Bernhardt Winery) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicEvent",
-    "name": "Hot Rocks – Rolling Stones Tribute at Bernhardt Winery",
-    "startDate": "2025-08-31T19:00",
-    "endDate": "2025-08-31T21:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "description": "Hot Rocks – A Salute to The Rolling Stones performing live at Bernhardt Winery on August 31, 2025. Outdoor lawn concert with Texas wine and live music under the stars.",
-    "image": "https://www.hotrockstribute.com/HotRocks_Lips.png",
-    "location": {
-      "@type": "Place",
-      "name": "Bernhardt Winery",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9043 County Road 204",
-        "addressLocality": "Plantersville",
-        "addressRegion": "TX",
-        "postalCode": "77363",
-        "addressCountry": "US"
-      }
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://www.bernhardtwinery.com/tc-events/hot-rocks-a-salute-to-the-rolling-stones",
-      "price": "18",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
-    },
-    "organizer": {
-      "@type": "Organization",
-      "name": "Hot Rocks – A Salute to The Rolling Stones",
-      "url": "https://www.hotrockstribute.com"
-    }
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Rocks - A Salute to The Rolling Stones</title>
+    <meta name="description" content="Hot Rocks - A Salute to The Rolling Stones. A high-energy Rolling Stones tribute band bringing classic rock to life across Houston and beyond.">
+    <meta name="keywords" content="Rolling Stones tribute band, Hot Rocks band, Rolling Stones cover band Houston, live rock music, tribute concerts Texas">
+    <meta name="author" content="Hot Rocks">
+    <meta property="og:title" content="Hot Rocks – A Salute to The Rolling Stones">
+    <meta property="og:description" content="Experience the ultimate Rolling Stones tribute! Check out our shows, photos, and videos.">
+    <meta property="og:image" content="https://hotrocks72.github.io/Hotrocks-website/HotRocks_Lips.png">
+    <meta property="og:url" content="https://hotrockstribute.com/">
+    <meta property="og:type" content="website">
 
-  <!-- JSON-LD Music Group & Events -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Hot Rocks - A Salute to The Rolling Stones",
-    "url": "https://www.hotrockstribute.com",
-    "event": [
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Sawyer Park", "startDate": "2024-12-14", "location": { "@type": "Place", "name": "Sawyer Park", "address": "Spring, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Deep Roots Vineyard", "startDate": "2025-04-25", "location": { "@type": "Place", "name": "Deep Roots Vineyard", "address": "Plantersville, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at City of Bellaire", "startDate": "2025-06-06", "location": { "@type": "Place", "name": "City of Bellaire", "address": "Bellaire, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Toddy Oaks", "startDate": "2025-07-19", "location": { "@type": "Place", "name": "Toddy Oaks", "address": "Katy, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Bernhardt Winery", "startDate": "2025-08-31", "location": { "@type": "Place", "name": "Bernhardt Winery", "address": "Plantersville, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Sugar Land Town Square", "startDate": "2025-09-13", "location": { "@type": "Place", "name": "Sugar Land Town Square", "address": "Sugar Land, TX" } }
-    ]
-  }
-  </script>
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Meta & Open Graph -->
-  <meta property="og:title" content="Hot Rocks – A Salute to The Rolling Stones">
-  <meta property="og:description" content="Experience the ultimate Rolling Stones tribute! Check out our shows, photos, and videos.">
-  <meta property="og:image" content="https://hotrocks72.github.io/Hotrocks-website/HotRocks_Lips.png">
-  <meta property="og:url" content="https://hotrocks72.github.io/Hotrocks-website/">
-  <meta property="og:type" content="website">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; text-align: center; }
 
-  <!-- Fonts & Meta -->
-  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hot Rocks - A Salute to The Rolling Stones</title>
-  <meta name="description" content="Hot Rocks - A Salute to The Rolling Stones. A high-energy Rolling Stones tribute band bringing classic rock to life across Houston and beyond.">
-  <meta name="keywords" content="Rolling Stones tribute band, Hot Rocks band, Rolling Stones cover band Houston, live rock music, tribute concerts Texas">
-  <meta name="author" content="Hot Rocks">
+        /* HERO SECTION */
+        header { background: #000; padding: 60px 20px; }
+        header img { max-width: 500px; width: 90%; height: auto; margin-bottom: 20px; }
+        h1 { font-family: 'Rock Salt', cursive; font-size: 3em; color: #e00; margin: 20px 0; }
 
-  <!-- Styles -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
-    header {
-  text-align: center;
-  padding: 80px 20px; /* More vertical padding for impact */
-  background: #000;
-}
+        /* SECTION STYLING */
+        section { padding: 40px 20px; max-width: 1000px; margin: 0 auto; text-align: center; }
+        h2 { font-family: 'Rock Salt', cursive; color: #e00; font-size: 2em; border-bottom: 2px solid #e00; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; }
 
-header img {
-  max-width: 500px; /* Larger logo on desktop */
-  width: 100%; /* Scales down responsively */
-  height: auto; /* Keeps proportions */
-  margin: 0 auto 30px auto; /* Centers and adds bottom spacing */
-  display: block;
-}
+        /* VIDEO GRID */
+        .video-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .video-grid iframe { flex: 1 1 300px; max-width: 560px; height: 315px; }
 
-    h1 { font-size: 2.5em; color: #e00; margin: 20px 0; }
-h2 {
-    color: #e00;
-    font-family: 'Rock Salt', cursive;
-    font-size: 2em;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto 30px;
-    padding-bottom: 5px;
-}
+        /* LATEST REEL */
+        .latest-reel video { width: 100%; max-width: 560px; border: 3px solid #e00; border-radius: 8px; }
+        .latest-reel p { color: #ccc; margin-top: 8px; }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 60px; /* short underline */
-    height: 2px;
-    background: #e00;
-    margin: 8px auto 0;
-}
+        /* SHOWS LIST */
+        .shows { list-style: none; padding: 0; display: inline-block; text-align: left; }
+        .shows li { padding: 8px 0; font-size: 1.1em; border-bottom: 1px solid #333; }
+        .shows li strong { color: #fff; font-weight: bold; }
+        .shows li a { display: inline-block; margin-left: 10px; padding: 4px 8px; background: #e00; color: #fff; border-radius: 4px; text-decoration: none; font-weight: bold; }
+        .shows li a:hover { background: #b00; }
 
-section {
-    text-align: center;
-}
+        /* GALLERY */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+        .gallery img { width: 100%; border: 3px solid #e00; transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer; }
+        .gallery img:hover { transform: scale(1.05); box-shadow: 0 0 10px rgba(255,0,0,0.6); }
 
-    section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center; /* Centers all content */
-}
-ul {
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block; /* Keeps the list centered */
-    text-align: left; /* Keeps text inside lists left-aligned */
-}
+        /* CONTACT */
+        .contact-button { background: #e00; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+        .contact-button:hover { background: #b00; }
 
-    .video-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .video-grid iframe { flex: 1 1 300px; max-width: 560px; height: 315px; }
-    .shows { list-style: none; padding: 0; }
-    .shows li { padding: 8px 0; font-size: 1.1em; border-bottom: 1px solid #333; }
-    .shows li strong { color: #fff; font-weight: bold; }
-    .shows li a { display: inline-block; margin-left: 10px; padding: 4px 8px; background-color: #e00; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold; }
-    .shows li a:hover { background-color: #b00; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-    .gallery img { width: 100%; border: 3px solid #e00; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    .gallery img:hover { transform: scale(1.05); box-shadow: 0 0 10px rgba(255,0,0,0.6); }
-    footer { text-align: center; padding: 20px; background: #000; color: #ccc; }
-    a { color: #e00; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+        /* FOOTER */
+        footer { background: #000; padding: 20px; color: #ccc; margin-top: 40px; }
+        a { color: #e00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
+
 <header>
-  <img src="HotRocks_Lips.png" alt="Hot Rocks Logo">
-  <h1>Hot Rocks – A Salute to The Rolling Stones</h1>
-  <div class="video-grid">
-    <iframe src="https://www.youtube.com/embed/yRvOBaLsoQQ" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/UVeqX-4ZNiA" frameborder="0" allowfullscreen></iframe>
-  </div>
+    <img src="HotRocks_Lips.png" alt="Hot Rocks Logo">
+    <h1>Hot Rocks – A Salute to The Rolling Stones</h1>
+    <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/yRvOBaLsoQQ" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/UVeqX-4ZNiA" frameborder="0" allowfullscreen></iframe>
+    </div>
 </header>
 
-<h2>Latest Reel</h2>
-<div style="text-align: center; margin: 20px 0;">
-  <video controls muted style="width: 100%; max-width: 560px; border: 3px solid #e00; border-radius: 8px;">
-    <source src="hotrocks_clilp.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p style="color: #ccc; margin-top: 8px;">Check out our latest live clip!</p>
-</div>
-
-<section>
-  <h2>About the Band</h2>
-  <p>Hot Rocks brings the legendary energy of The Rolling Stones to life with a high-energy, authentic tribute show. From the iconic hits to deep-cut fan favorites, Hot Rocks delivers a concert experience that captures the spirit, sound, and swagger of the world’s greatest rock and roll band.</p>
+<section class="latest-reel">
+    <h2>Latest Reel</h2>
+    <video controls muted>
+        <source src="hotrocks_clilp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>Check out our latest live clip!</p>
 </section>
 
 <section>
-  <h2>Meet the Band</h2>
-  <ul class="band-members">
-    <li><strong>Bobby Lewis</strong> – Lead Vocals & Percussion</li>
-    <li><strong>Jackie Hibbard</strong> – Guitar & Vocals</li>
-    <li><strong>Jeff Evans</strong> – Guitar & Vocals</li>
-    <li><strong>Chad Lyons</strong> – Drums</li>
-    <li><strong>Craig Gysler</strong> – Keys & Vocals</li>
-    <li><strong>Jeff Enlow</strong> – Bass</li>
-  </ul>
+    <h2>About the Band</h2>
+    <p>Hot Rocks brings the legendary energy of The Rolling Stones to life with a high-energy, authentic tribute show. From the iconic hits to deep-cut fan favorites, Hot Rocks delivers a concert experience that captures the spirit, sound, and swagger of the world’s greatest rock and roll band.</p>
 </section>
 
 <section>
-  <h2>Photo Gallery</h2>
-  <div class="gallery">
-    <a href="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_06_18_15.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_06_18_15.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_07_30_11.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_07_30_11.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_09_02_15.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_09_02_15.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_09_13_06.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_09_13_06.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_10_11_05.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_10_11_05.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_14_19_06.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_14_19_06.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_35_22_03.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_35_22_03.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_03_01_23_08.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_03_01_23_08.jpg"></a>
-  </div>
+    <h2>Meet the Band</h2>
+    <ul class="band-members">
+        <li><strong>Bobby Lewis</strong> – Lead Vocals & Percussion</li>
+        <li><strong>Jackie Hibbard</strong> – Guitar & Vocals</li>
+        <li><strong>Jeff Evans</strong> – Guitar & Vocals</li>
+        <li><strong>Chad Lyons</strong> – Drums</li>
+        <li><strong>Craig Gysler</strong> – Keys & Vocals</li>
+        <li><strong>Jeff Enlow</strong> – Bass</li>
+    </ul>
 </section>
 
 <section>
-  <h2>Upcoming Shows</h2>
-  <ul class="shows">
-    <li>Dec 14, 2024 – Sawyer Park</li>
-    <li>Apr 25, 2025 – Deep Roots Vineyard</li>
-    <li>Jun 6, 2025 – City of Bellaire</li>
-    <li>Jun 12, 2025 – Deer Park Concert Series (Canceled for Weather)</li>
-    <li>Jul 19, 2025 – Toddy Oaks</li>
-    <li><strong>Aug 31, 2025 – Bernhardt Winery</strong><a href="https://www.bernhardtwinery.com/tc-events/hot-rocks-a-salute-to-the-rolling-stones" target="_blank">Get Tickets</a></li>
-    <li><strong>Sep 13, 2025 – Sugar Land Town Square</strong><a href="https://www.sugarlandtownsquare.com/events/bingo-music-on-the-square-hot-rocks-a-salute-to-the-rolling-stones/" target="_blank">Get Tickets</a></li>
-    <li>Oct 4, 2025 – Toddy Oaks</li>
-    <li>Oct 24, 2025 – Jackie's Brick House</li>
-    <li>Nov 7, 2025 – Scotty's Saloon</li>
-    <li>Dec 19, 2025 – Toddy Oaks</li>
-    <li><strong>Currently booking for 2026!</strong></li>
-  </ul>
-</section>
-<section style="text-align: center; margin: 40px 0;">
-  <h2>Contact</h2>
-  <p>For booking or general inquiries, reach out to us directly:</p>
-  <p>
-    <a href="mailto:hotrocksstonestribute@gmail.com" 
-       style="display: inline-block; padding: 10px 20px; background-color: #e00; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">
-       Email Us
-    </a>
-  </p>
-  <p style="margin-top: 20px;">Follow us on social media for updates:</p>
-  <p>
-    <a href="https://www.facebook.com/hotrockshhtown" target="_blank" style="margin: 0 10px; color: #e00;">Facebook</a> | 
-    <a href="https://www.instagram.com/hotrocksstonestrib" target="_blank" style="margin: 0 10px; color: #e00;">Instagram</a>
-  </p>
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <a href="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_06_18_15.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_06_18_15.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_07_30_11.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_07_30_11.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_09_02_15.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_09_02_15.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_09_13_06.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_09_13_06.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_10_11_05.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_10_11_05.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_14_19_06.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_14_19_06.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_01_35_22_03.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_35_22_03.jpg"></a>
+        <a href="Hot%20Rocks%20-%20Jackie_03_01_23_08.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_03_01_23_08.jpg"></a>
+    </div>
 </section>
 
+<section>
+    <h2>Upcoming Shows</h2>
+    <ul class="shows">
+        <li>Dec 14, 2024 – Sawyer Park</li>
+        <li>Apr 25, 2025 – Deep Roots Vineyard</li>
+        <li>Jun 6, 2025 – City of Bellaire</li>
+        <li>Jun 12, 2025 – Deer Park Concert Series (Canceled for Weather)</li>
+        <li>Jul 19, 2025 – Toddy Oaks</li>
+        <li><strong>Aug 31, 2025 – Bernhardt Winery</strong><a href="https://www.bernhardtwinery.com/tc-events/hot-rocks-a-salute-to-the-rolling-stones" target="_blank">Get Tickets</a></li>
+        <li><strong>Sep 13, 2025 – Sugar Land Town Square</strong><a href="https://www.sugarlandtownsquare.com/events/bingo-music-on-the-square-hot-rocks-a-salute-to-the-rolling-stones/" target="_blank">Get Tickets</a></li>
+        <li>Oct 4, 2025 – Toddy Oaks</li>
+        <li>Oct 24, 2025 – Jackie's Brick House</li>
+        <li>Nov 7, 2025 – Scotty's Saloon</li>
+        <li>Dec 19, 2025 – Toddy Oaks</li>
+        <li><strong>Currently booking for 2026!</strong></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>For booking or general inquiries, reach out to us directly:</p>
+    <a class="contact-button" href="mailto:hotrocksstonestribute@gmail.com">Email Us</a>
+    <p>Follow us on social media:</p>
+    <p>
+        <a href="https://www.facebook.com/hotrockstown" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/hotrocksstonestrib" target="_blank">Instagram</a>
+    </p>
+</section>
 
 <footer>
-  &copy; 2025 Hot Rocks – A Salute to The Rolling Stones
+    &copy; 2025 Hot Rocks – A Salute to The Rolling Stones
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
+
 
