@@ -79,9 +79,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
-    header { text-align: center; padding: 50px 20px; background: #000; }
-    header img { max-width: 400px; }
-    h1, h2 { font-family: 'Rock Salt', cursive; }
+    header {
+  text-align: center;
+  padding: 80px 20px; /* More vertical padding for impact */
+  background: #000;
+}
+
+header img {
+  max-width: 500px; /* Larger logo on desktop */
+  width: 100%; /* Scales down responsively */
+  height: auto; /* Keeps proportions */
+  margin: 0 auto 30px auto; /* Centers and adds bottom spacing */
+  display: block;
+}
+
     h1 { font-size: 2.5em; color: #e00; margin: 20px 0; }
 h2 {
     color: #e00;
