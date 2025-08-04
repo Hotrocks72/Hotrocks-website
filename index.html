@@ -107,7 +107,19 @@ section {
     text-align: center;
 }
 
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center; /* Centers all content */
+}
+ul {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block; /* Keeps the list centered */
+    text-align: left; /* Keeps text inside lists left-aligned */
+}
+
     .video-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
     .video-grid iframe { flex: 1 1 300px; max-width: 560px; height: 315px; }
     .shows { list-style: none; padding: 0; }
