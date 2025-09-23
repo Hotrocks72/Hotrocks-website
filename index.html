@@ -3,36 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- JSON-LD for Event -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "name": "Hot Rocks - A Salute to The Rolling Stones",
-    "url": "https://www.hotrockstribute.com",
-    "event": [
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Sawyer Park", "startDate": "2024-12-14", "location": { "@type": "Place", "name": "Sawyer Park", "address": "Spring, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Deep Roots Vineyard", "startDate": "2025-04-25", "location": { "@type": "Place", "name": "Deep Roots Vineyard", "address": "Plantersville, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at City of Bellaire", "startDate": "2025-06-06", "location": { "@type": "Place", "name": "City of Bellaire", "address": "Bellaire, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Toddy Oaks", "startDate": "2025-07-19", "location": { "@type": "Place", "name": "Toddy Oaks", "address": "Katy, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Bernhardt Winery", "startDate": "2025-08-31", "location": { "@type": "Place", "name": "Bernhardt Winery", "address": "Plantersville, TX" } },
-      { "@type": "MusicEvent", "name": "Hot Rocks Live at Sugar Land Town Square", "startDate": "2025-09-13", "location": { "@type": "Place", "name": "Sugar Land Town Square", "address": "Sugar Land, TX" } }
-    ]
-  }
-  </script>
-
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hot Rocks - A Salute to The Rolling Stones</title>
-  <meta name="description" content="Hot Rocks is a Rolling Stones tribute band based in Houston, TX. Live shows, photos, and videos.">
-  <meta property="og:title" content="Hot Rocks – A Salute to The Rolling Stones">
-  <meta property="og:description" content="Experience the ultimate Rolling Stones tribute! Check out our shows, photos, and videos.">
-  <meta property="og:image" content="https://hotrocks72.github.io/Hotrocks-website/HotRocks_Lips.png">
-  <meta property="og:url" content="https://hotrocks72.github.io/Hotrocks-website/">
-  <meta property="og:type" content="website">
+  <title>Hot Rocks – A Salute to The Rolling Stones</title>
 
-  <!-- Fonts + Lightbox -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+  <!-- Lightbox CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
   <style>
@@ -43,18 +21,12 @@
       color: #fff;
       text-align: center;
     }
-    h1, h2 {
-      font-family: 'Rock Salt', cursive;
-      color: #e00;
-      margin-bottom: 20px;
-    }
-    h1 { font-size: 3em; }
-    h2 { font-size: 2em; }
 
     header {
       padding: 80px 20px;
       background: #000;
     }
+
     header img {
       max-width: 500px;
       width: 100%;
@@ -63,209 +35,116 @@
       display: block;
     }
 
+    h1 {
+      font-family: 'Rock Salt', cursive;
+      font-size: 3em;
+      color: #e00;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-family: 'Rock Salt', cursive;
+      color: #e00;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
 
-    ul.shows {
-      list-style: none;
-      padding: 0;
-    }
-    ul.shows li {
-      padding: 8px 0;
-      font-size: 1.1em;
-      border-bottom: 1px solid #333;
-    }
-    ul.shows li a {
-      background: #e00;
-      color: #fff;
-      padding: 4px 8px;
-      margin-left: 10px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    ul.shows li a:hover {
-      background: #b00;
-    }
-
-    .gallery {
+    /* Gallery Layout */
+    .band-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
       justify-items: center;
+      margin-top: 40px;
     }
 
-    .gallery img {
+    .band-member {
+      text-align: center;
+    }
+
+    .band-member img {
       width: 100%;
-      max-width: 200px;
-      border-radius: 8px;
-      border: 2px solid #e00;
-    }
-
-    .gallery .caption {
-      font-family: 'Rock Salt', cursive;
-      font-size: 1em;
-      margin-top: 8px;
-      color: #e00;
-    }
-
-    .centered-photo img {
-      max-width: 100%;
-      border: 4px solid #e00;
-      border-radius: 12px;
-      margin-bottom: 40px;
-    }
-
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .video-grid iframe {
-      flex: 1 1 300px;
-      max-width: 560px;
-      height: 315px;
-    }
-
-    .latest-reel video {
-      width: 100%;
-      max-width: 560px;
+      max-width: 250px;
       border: 3px solid #e00;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto;
+      border-radius: 10px;
     }
 
-    .contact-button {
-      background: #e00;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+    .band-member-name {
+      font-family: 'Rock Salt', cursive;
+      color: #e00;
+      font-size: 1.5em;
+      margin-top: 10px;
     }
 
+    /* Footer */
     footer {
+      text-align: center;
       padding: 20px;
       background: #000;
       color: #ccc;
-      font-size: 0.9em;
     }
-
   </style>
 </head>
 <body>
 
-<header>
-  <img src="HotRocks_Lips.png" alt="Hot Rocks Logo">
-  <h1>Hot Rocks – A Salute to The Rolling Stones</h1>
+  <header>
+    <img src="HotRocks_Lips.png" alt="Hot Rocks Logo">
+    <h1>Hot Rocks – A Salute to The Rolling Stones</h1>
+  </header>
 
-  <div class="video-grid">
-    <iframe src="https://www.youtube.com/embed/yRvOBaLsoQQ" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/UVeqX-4ZNiA" frameborder="0" allowfullscreen></iframe>
-  </div>
-</header>
+  <section>
+    <h2>Meet the Band</h2>
+    <div class="band-gallery">
 
-<section class="latest-reel">
-  <h2>Latest Reel</h2>
-  <video controls muted>
-    <source src="hotrocks_clilp.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p style="color:#ccc; margin-top: 8px;">Check out our latest live clip!</p>
-</section>
+      <!-- Row 1 -->
+      <div class="band-member">
+        <img src="Jack1.jpeg" alt="Jackie Hibbard">
+        <div class="band-member-name">Jackie Hibbard</div>
+      </div>
 
-<section>
-  <h2>About the Band</h2>
-  <p>Hot Rocks brings the legendary energy of The Rolling Stones to life with a high-energy, authentic tribute show. From the iconic hits to deep-cut fan favorites, Hot Rocks delivers a concert experience that captures the spirit, sound, and swagger of the world’s greatest rock and roll band.</p>
-</section>
+      <div class="band-member">
+        <img src="bobby1.jpeg" alt="Bobby Lewis">
+        <div class="band-member-name">Bobby Lewis</div>
+      </div>
 
-<section>
-  <h2>Meet the Band</h2>
-  <div class="gallery">
+      <div class="band-member">
+        <img src="JeffE1.jpeg" alt="Jeff Evans">
+        <div class="band-member-name">Jeff Evans</div>
+      </div>
 
-    <!-- Centered full band photo -->
-    <div class="centered-photo">
-      <img src="HotRocksBand2025.JPG" alt="Hot Rocks Band 2025">
+      <!-- Row 2 -->
+      <div class="band-member">
+        <img src="Chad1.jpeg" alt="Chad Lyons">
+        <div class="band-member-name">Chad Lyons</div>
+      </div>
+
+      <div class="band-member">
+        <img src="Craig1.jpeg" alt="Craig Gysler">
+        <div class="band-member-name">Craig Gysler</div>
+      </div>
+
+      <div class="band-member">
+        <img src="JeffEn1.jpeg" alt="Jeff Enlow">
+        <div class="band-member-name">Jeff Enlow</div>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Band Members -->
-    <div>
-      <a href="bobby1.jpeg" data-lightbox="hotrocks"><img src="bobby1.jpeg" alt="Bobby Lewis"></a>
-      <div class="caption">Bobby Lewis</div>
-    </div>
-    <div>
-      <a href="Jack1.jpeg" data-lightbox="hotrocks"><img src="Jack1.jpeg" alt="Jackie Hibbard"></a>
-      <div class="caption">Jackie Hibbard</div>
-    </div>
-    <div>
-      <a href="JeffE1.jpeg" data-lightbox="hotrocks"><img src="JeffE1.jpeg" alt="Jeff Evans"></a>
-      <div class="caption">Jeff Evans</div>
-    </div>
-    <div>
-      <a href="JeffEn1.jpeg" data-lightbox="hotrocks"><img src="JeffEn1.jpeg" alt="Jeff Enlow"></a>
-      <div class="caption">Jeff Enlow</div>
-    </div>
-    <div>
-      <a href="Chad1.jpeg" data-lightbox="hotrocks"><img src="Chad1.jpeg" alt="Chad Lyons"></a>
-      <div class="caption">Chad Lyons</div>
-    </div>
-    <div>
-      <a href="Craig1.jpeg" data-lightbox="hotrocks"><img src="Craig1.jpeg" alt="Craig Gysler"></a>
-      <div class="caption">Craig Gysler</div>
-    </div>
-  </div>
-</section>
+  <footer>
+    &copy; 2025 Hot Rocks – A Salute to The Rolling Stones
+  </footer>
 
-<section>
-  <h2>Photo Gallery</h2>
-  <div class="gallery">
-    <a href="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_06_01.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_04_29_16.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_17_18.jpg"></a>
-    <a href="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg" data-lightbox="hotrocks"><img src="Hot%20Rocks%20-%20Jackie_01_05_19_19.jpg"></a>
-    <!-- Add more images as needed -->
-  </div>
-</section>
-
-<section>
-  <h2>Upcoming Shows</h2>
-  <ul class="shows">
-    <li>Dec 14, 2024 – Sawyer Park</li>
-    <li>Apr 25, 2025 – Deep Roots Vineyard</li>
-    <li>Jun 6, 2025 – City of Bellaire</li>
-    <li>Jul 19, 2025 – Toddy Oaks</li>
-    <li><strong>Aug 31, 2025 – Bernhardt Winery</strong><a href="https://www.bernhardtwinery.com/tc-events/hot-rocks-a-salute-to-the-rolling-stones" target="_blank">Get Tickets</a></li>
-    <li><strong>Sep 13, 2025 – Sugar Land Town Square</strong><a href="https://www.sugarlandtownsquare.com/events/bingo-music-on-the-square-hot-rocks-a-salute-to-the-rolling-stones/" target="_blank">Get Tickets</a></li>
-    <li>Oct 4, 2025 – Toddy Oaks</li>
-    <li>Nov 7, 2025 – Scotty's Saloon</li>
-    <li>Dec 19, 2025 – Toddy Oaks</li>
-    <li><strong>Currently booking for 2026!</strong></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>For booking or general inquiries:</p>
-  <p><a href="mailto:hotrocksstonestribute@gmail.com" class="contact-button">Email Us</a></p>
-  <p style="margin-top: 20px;">Follow us:</p>
-  <p>
-    <a href="https://www.facebook.com/hotrockshtown" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/hotrocksstonestrib" target="_blank">Instagram</a>
-  </p>
-</section>
-
-<footer>
-  &copy; 2025 Hot Rocks – A Salute to The Rolling Stones
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
+
 
 
