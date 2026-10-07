@@ -5,20 +5,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hot Rocks – A Salute to The Rolling Stones</title>
+
+  <!-- =====================================================
+       HOT ROCKS - SEO / GEO
+       ===================================================== -->
+
+  <title>Rolling Stones Tribute Band Houston TX | Hot Rocks</title>
+
+  <meta
+    name="description"
+    content="Hot Rocks is a Houston, Texas Rolling Stones tribute band performing an authentic, high-energy Rolling Stones concert experience for festivals, theaters, live music venues, corporate events, private events, breweries, wineries and special events throughout Texas."
+  />
+
+  <meta
+    name="keywords"
+    content="Rolling Stones tribute band Houston, Rolling Stones tribute band Texas, Houston tribute band, Rolling Stones tribute, Rolling Stones cover band, tribute bands Houston, live music Houston, Rolling Stones tribute band for hire"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.hotrockstribute.com/" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    rel="stylesheet"
+  />
 
-  <!-- Open Graph Meta -->
-  <meta property="og:title" content="Hot Rocks – A Salute to The Rolling Stones">
-  <meta property="og:description" content="Experience the ultimate Rolling Stones tribute! Check out our shows, photos, and videos.">
-  <meta property="og:image" content="https://hotrocks72.github.io/Hotrocks-website/HotRocks_Lips.png">
-  <meta property="og:url" content="https://www.hotrockstribute.com/">
-  <meta property="og:type" content="website">
+  <!-- =====================================================
+       OPEN GRAPH / SOCIAL MEDIA
+       ===================================================== -->
+
+  <meta
+    property="og:title"
+    content="Hot Rocks | Rolling Stones Tribute Band - Houston, Texas"
+  />
+
+  <meta
+    property="og:description"
+    content="Experience the music, energy and swagger of The Rolling Stones with Houston-based tribute band Hot Rocks."
+  />
+
+  <meta
+    property="og:image"
+    content="https://www.hotrockstribute.com/HotRocks_Lips.png"
+  />
+
+  <meta
+    property="og:url"
+    content="https://www.hotrockstribute.com/"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <!-- =====================================================
+       STRUCTURED DATA / GEO / AI DISCOVERY
+       ===================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "@id": "https://www.hotrockstribute.com/#hotrocks",
+    "name": "Hot Rocks – A Salute to The Rolling Stones",
+    "alternateName": "Hot Rocks",
+    "url": "https://www.hotrockstribute.com/",
+    "image": "https://www.hotrockstribute.com/HotRocksBand2026.png",
+    "logo": "https://www.hotrockstribute.com/HotRocks_Lips.png",
+    "description": "Hot Rocks is a Houston, Texas-based Rolling Stones tribute band performing an authentic, high-energy Rolling Stones concert experience for festivals, theaters, live music venues, corporate events, private events and special events throughout Texas.",
+    "genre": [
+      "Rock",
+      "Classic Rock",
+      "Rock and Roll",
+      "Rolling Stones Tribute"
+    ],
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Houston, Texas"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Texas"
+    },
+    "sameAs": [
+      "https://www.facebook.com/hotrockshtown",
+      "https://www.instagram.com/hotrocksstonestrib"
+    ],
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Jackie Hibbard"
+      },
+      {
+        "@type": "Person",
+        "name": "Paul Hatton"
+      },
+      {
+        "@type": "Person",
+        "name": "Jeff Evans"
+      },
+      {
+        "@type": "Person",
+        "name": "Chad Lyons"
+      },
+      {
+        "@type": "Person",
+        "name": "Craig Gysler"
+      },
+      {
+        "@type": "Person",
+        "name": "Jeff Enlow"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Booking and General Inquiries",
+      "email": "hotrocksstonestribute@gmail.com"
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -63,6 +174,7 @@
     }
 
     /* Band Gallery Grid */
+
     .band-gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -75,13 +187,13 @@
     }
 
     .band-member img {
-    width: 100%;
-    max-width: 250px;
-    height: 185px;
-    object-fit: cover;
-    object-position: center;
-    border: 3px solid #e00;
-    border-radius: 10px;
+      width: 100%;
+      max-width: 250px;
+      height: 185px;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid #e00;
+      border-radius: 10px;
     }
 
     .band-member-name {
@@ -92,6 +204,7 @@
     }
 
     /* Video Grid */
+
     .video-grid {
       display: flex;
       flex-wrap: wrap;
@@ -107,6 +220,7 @@
     }
 
     /* Latest Reel */
+
     .latest-reel video {
       width: 100%;
       max-width: 560px;
@@ -122,6 +236,7 @@
     }
 
     /* Shows List */
+
     .shows {
       list-style: none;
       padding: 0;
@@ -153,6 +268,7 @@
     }
 
     /* Contact */
+
     .contact-button {
       background: #e00;
       color: #fff;
@@ -166,122 +282,388 @@
       background: #b00;
     }
 
+    .social-links a {
+      color: #fff;
+    }
+
     /* Footer */
+
     footer {
       text-align: center;
       padding: 20px;
       background: #000;
       color: #ccc;
     }
+
+    /* Mobile */
+
+    @media (max-width: 700px) {
+      .band-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      header {
+        padding: 50px 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- Header / Logo -->
+  <!-- =====================================================
+       HEADER / LOGO
+       ===================================================== -->
+
   <header>
-    <img src="HotRocks_Lips.png" alt="Hot Rocks Logo" />
+
+    <img
+      src="HotRocks_Lips.png"
+      alt="Hot Rocks Rolling Stones tribute band Houston Texas"
+    />
+
     <h1>Hot Rocks – A Salute to The Rolling Stones</h1>
+
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/yRvOBaLsoQQ" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/UVeqX-4ZNiA" frameborder="0" allowfullscreen></iframe>
+
+      <iframe
+        src="https://www.youtube.com/embed/yRvOBaLsoQQ"
+        title="Hot Rocks Rolling Stones Tribute Band Live Performance"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <iframe
+        src="https://www.youtube.com/embed/UVeqX-4ZNiA"
+        title="Hot Rocks Rolling Stones Tribute Band Performance"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
     </div>
+
   </header>
 
-  <!-- Latest Reel -->
+
+  <!-- =====================================================
+       LATEST REEL
+       ===================================================== -->
+
   <section class="latest-reel">
+
     <h2>Latest Reel</h2>
+
     <video controls muted>
-      <source src="hotrocks_clilp.mp4" type="video/mp4" />
+
+      <source
+        src="hotrocks_clilp.mp4"
+        type="video/mp4"
+      />
+
       Your browser does not support the video tag.
+
     </video>
-    <p>Check out our latest live clip!</p>
-  </section>
 
-  <!-- About -->
-  <section>
-    <h2>About the Band</h2>
     <p>
-      Hot Rocks brings the legendary energy of The Rolling Stones to life with a high-energy, authentic tribute show.
-      From the iconic hits to deep-cut fan favorites, Hot Rocks delivers a concert experience that captures the spirit,
-      sound, and swagger of the world’s greatest rock and roll band.
+      Check out our latest live performance from Hot Rocks.
     </p>
+
   </section>
-  <!-- Band Group Photo + Individual Members -->
-<section>
-  <h2>The Band</h2>
-
-  <!-- Group Photo Centered -->
-  <div style="text-align: center; margin-bottom: 40px;">
-    <img src="HotRocksBand2026.png" alt="Hot Rocks Band 2026" style="max-width: 100%; width: 700px; border: 3px solid #e00; border-radius: 10px;" />
-  </div>
 
 
-  <!-- Band Members -->
+  <!-- =====================================================
+       ABOUT
+       ===================================================== -->
+
   <section>
+
+    <h2>About Hot Rocks</h2>
+
+    <p>
+      Hot Rocks – A Salute to The Rolling Stones is a
+      <strong>Houston, Texas-based Rolling Stones tribute band</strong>
+      bringing the legendary energy, sound and swagger of
+      The Rolling Stones to the stage.
+    </p>
+
+    <p>
+      From iconic hits to deep-cut fan favorites, Hot Rocks delivers
+      an authentic, high-energy Rolling Stones concert experience
+      celebrating the music of one of the greatest rock and roll
+      bands of all time.
+    </p>
+
+    <p>
+      Hot Rocks performs throughout Texas at
+      <strong>
+        festivals, theaters, live music venues, corporate events,
+        private events, breweries, wineries and special events.
+      </strong>
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       BAND GROUP PHOTO
+       ===================================================== -->
+
+  <section>
+
+    <h2>The Band</h2>
+
+    <div style="text-align: center; margin-bottom: 40px;">
+
+      <img
+        src="HotRocksBand2026.png"
+        alt="Hot Rocks Houston Texas Rolling Stones Tribute Band"
+        style="
+          max-width: 100%;
+          width: 700px;
+          border: 3px solid #e00;
+          border-radius: 10px;
+        "
+      />
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       BAND MEMBERS
+       ===================================================== -->
+
+  <section>
+
     <h2>Meet the Band</h2>
+
     <div class="band-gallery">
+
       <!-- Row 1 -->
+
       <div class="band-member">
-        <img src="Jack1.jpeg" alt="Jackie Hibbard">
-        <div class="band-member-name">Jackie Hibbard</div>
+
+        <img
+          src="Jack1.jpeg"
+          alt="Jackie Hibbard - Hot Rocks Rolling Stones Tribute Band"
+        />
+
+        <div class="band-member-name">
+          Jackie Hibbard
+        </div>
+
       </div>
+
+
       <div class="band-member">
-        <img src="IMG_0132.jpg" alt="Paul Hatton" style="object-position: center 20%;">
-        <div class="band-member-name">Paul Hatton</div>
+
+        <img
+          src="IMG_0132.jpg"
+          alt="Paul Hatton - Hot Rocks Rolling Stones Tribute Band"
+          style="object-position: center 20%;"
+        />
+
+        <div class="band-member-name">
+          Paul Hatton
+        </div>
+
       </div>
+
+
       <div class="band-member">
-        <img src="JeffE1.jpeg" alt="Jeff Evans">
-        <div class="band-member-name">Jeff Evans</div>
+
+        <img
+          src="JeffE1.jpeg"
+          alt="Jeff Evans - Hot Rocks Rolling Stones Tribute Band"
+        />
+
+        <div class="band-member-name">
+          Jeff Evans
+        </div>
+
       </div>
+
 
       <!-- Row 2 -->
+
       <div class="band-member">
-        <img src="Chad1.jpeg" alt="Chad Lyons">
-        <div class="band-member-name">Chad Lyons</div>
+
+        <img
+          src="Chad1.jpeg"
+          alt="Chad Lyons - Hot Rocks Rolling Stones Tribute Band"
+        />
+
+        <div class="band-member-name">
+          Chad Lyons
+        </div>
+
       </div>
+
+
       <div class="band-member">
-        <img src="IMG_0176.jpg" alt="Craig Gysler">
-        <div class="band-member-name">Craig Gysler</div>
+
+        <img
+          src="IMG_0176.jpg"
+          alt="Craig Gysler - Hot Rocks Rolling Stones Tribute Band"
+        />
+
+        <div class="band-member-name">
+          Craig Gysler
+        </div>
+
       </div>
+
+
       <div class="band-member">
-        <img src="JeffEn1.jpeg" alt="Jeff Enlow">
-        <div class="band-member-name">Jeff Enlow</div>
+
+        <img
+          src="JeffEn1.jpeg"
+          alt="Jeff Enlow - Hot Rocks Rolling Stones Tribute Band"
+        />
+
+        <div class="band-member-name">
+          Jeff Enlow
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Shows -->
+
+  <!-- =====================================================
+       UPCOMING SHOWS
+       ===================================================== -->
+
   <section>
+
     <h2>Upcoming Shows</h2>
+
     <ul class="shows">
 
-    
-       
-      <li>Oct 23, 2026 – TBD</li>
-       <li>Nov 14, 2026 – Crazy Train Bar</li>
-      <li>Dec 5, 2026 – 403 Eats</li>
-      <li>Jan 23, 2027 – Jackie's Bar and Grill</strong></li>
-       <li>Feb 5, 2027 - The Post Downtown Houston</strong></li>
-    </ul> 
+      <li>
+        <strong>Nov 14, 2026</strong> – Crazy Train Bar
+      </li>
+
+      <li>
+        <strong>Dec 5, 2026</strong> – 403 Eats
+      </li>
+
+      <li>
+        <strong>Jan 23, 2027</strong> – Jackie's Bar and Grill
+      </li>
+
+      <li>
+        <strong>Feb 5, 2027</strong> – The Post Downtown Houston
+      </li>
+
+    </ul>
+
   </section>
 
-  <!-- Contact -->
+
+  <!-- =====================================================
+       BOOK HOT ROCKS
+       ===================================================== -->
+
   <section>
-    <h2>Contact</h2>
-    <p>For booking or general inquiries, reach out to us directly:</p>
-    <p><a href="mailto:hotrocksstonestribute@gmail.com" class="contact-button">Email Us</a></p>
-    <p style="margin-top: 20px;">Follow us on social media for updates:</p>
+
+    <h2>Book Hot Rocks</h2>
+
     <p>
-      <a href="https://www.facebook.com/hotrockshtown" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com/hotrocksstonestrib" target="_blank">Instagram</a>
+      Looking for a Rolling Stones tribute band for your venue,
+      festival, corporate event, private event or special event?
     </p>
+
+    <p>
+      Hot Rocks is available for select performances throughout
+      Houston and Texas.
+    </p>
+
+    <p>
+      For booking or general inquiries, contact us directly:
+    </p>
+
+    <p>
+
+      <a
+        href="mailto:hotrocksstonestribute@gmail.com"
+        class="contact-button"
+      >
+        Book Hot Rocks
+      </a>
+
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       FOLLOW HOT ROCKS
+       ===================================================== -->
+
+  <section>
+
+    <h2>Follow Hot Rocks</h2>
+
+    <p>
+      Follow Hot Rocks for upcoming Rolling Stones tribute shows,
+      live videos, photos and performance announcements.
+    </p>
+
+    <p class="social-links">
+
+      <a
+        href="https://www.facebook.com/hotrockshtown"
+        target="_blank"
+        rel="noopener"
+      >
+        Facebook
+      </a>
+
+      |
+
+      <a
+        href="https://www.instagram.com/hotrocksstonestrib"
+        target="_blank"
+        rel="noopener"
+      >
+        Instagram
+      </a>
+
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
 
   <footer>
-    &copy; 2025 Hot Rocks – A Salute to The Rolling Stones
+
+    &copy; 2026 Hot Rocks – A Salute to The Rolling Stones |
+    Houston, Texas
+
   </footer>
 
+
   <!-- Lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js">
+  </script>
+
 </body>
+</html>
 </html>
